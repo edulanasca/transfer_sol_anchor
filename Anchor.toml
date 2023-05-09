@@ -1,0 +1,21 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+undead_arena = "uAreWLnxjRHP3pcgy1kCtJNs9hMW7HiCzVt9r31nqVc"
+[programs.devnet]
+undead_arena = "uAreWLnxjRHP3pcgy1kCtJNs9hMW7HiCzVt9r31nqVc"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/edujlac/.config/solana/id.json"
+
+[provider.devnet]
+cluster = "devnet"
+wallet = "/Users/edujlac/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
